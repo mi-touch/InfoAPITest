@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,6 +14,6 @@ namespace UserApiTest.Models
             Database.EnsureCreated();
         }
 
-        public DbSet<User> Books { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
